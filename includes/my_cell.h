@@ -31,5 +31,7 @@ uint32_t my_cell_get_array(void *cell_ptr, double **arr, void *params);
 void my_cell_from_array(void *cell_ptr, double *arr, void *params);
 void my_cell_reset(void *cell_ptr, void *pop,\
                                     uint32_t pop_size, void *params);
+uint32_t my_cell_update(void *cell_ptr, void *pop,\
+                                uint32_t pop_size, void *params);
 
 #endif
