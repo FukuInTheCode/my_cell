@@ -1,6 +1,10 @@
 #ifndef MY_CELL_H
 #define MY_CELL_H
 
+#include "my_evo.h"
+#include "my_neuralnetwork.h"
+#include "SFML/Graphics.h"
+
 typedef struct {
     my_nn_t brain;
     my_matrix_t atb;
