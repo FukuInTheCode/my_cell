@@ -25,5 +25,7 @@ void my_cell_create(void *cell_ptr, void *params);
 void my_cell_free(void *cell_ptr, void *params);
 double my_cell_get_reward(void *cell_ptr, void *pop,\
                             uint32_t pop_size, void *params);
+bool my_cell_is_select(void *cell_ptr, void *reward,\
+                            uint32_t pop_size, void *params);
 
 #endif
