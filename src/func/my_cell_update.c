@@ -7,7 +7,7 @@ static double normalize(double x)
 
 static double control_coords(double x)
 {
-    return (int)x % SIZE;
+    return (int)x % (int)SIZE;
 }
 
 uint32_t my_cell_update(void *cell_ptr, void *pop,\
