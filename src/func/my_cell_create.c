@@ -8,5 +8,8 @@ void my_cell_create(void *cell_ptr, void *params)
     cell->brain.dims = dims;
     cell->brain.size = 3;
     my_nn_create(&(cell->brain));
-    my_nn_print(&(cell->brain));
+    cell->atb.m = 0;
+    cell->atb.n = 0;
+    my_matrix_create(2, 1, 1, &(cell->atb));
+    my_matrix_randint(0, SIZE, 1, &(cell->atb));
 }
