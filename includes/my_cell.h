@@ -1,7 +1,6 @@
 #ifndef MY_CELL_H
 #define MY_CELL_H
 
-#include "my_evo.h"
 #include "my_neuralnetwork.h"
 #include "SFML/Graphics.h"
 
