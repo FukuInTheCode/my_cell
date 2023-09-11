@@ -10,7 +10,8 @@
         "my_neuralnetwork.h": "c",
         "graphics.h": "c",
         "stdint.h": "c",
-        "unistd.h": "c"
+        "unistd.h": "c",
+        "stdbool.h": "c"
     },
     "epilinter.tokenizer_address": "ws://54.36.183.139:8081"
 }
