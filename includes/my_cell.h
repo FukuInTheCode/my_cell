@@ -28,5 +28,6 @@ double my_cell_get_reward(void *cell_ptr, void *pop,\
 bool my_cell_is_select(void *cell_ptr, void *reward,\
                             uint32_t pop_size, void *params);
 uint32_t my_cell_get_array(void *cell_ptr, double **arr, void *params);
+void my_cell_from_array(void *cell_ptr, double *arr, void *params);
 
 #endif
