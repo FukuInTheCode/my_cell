@@ -20,4 +20,6 @@ typedef struct {
 
 #define SIZE 512.
 
+void my_cell_create(void *cell_ptr, void *params)
+
 #endif

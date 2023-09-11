@@ -8,7 +8,9 @@
         "my_evo.h": "c",
         "my_cell.h": "c",
         "my_neuralnetwork.h": "c",
-        "graphics.h": "c"
+        "graphics.h": "c",
+        "stdint.h": "c",
+        "unistd.h": "c"
     },
     "epilinter.tokenizer_address": "ws://54.36.183.139:8081"
 }
