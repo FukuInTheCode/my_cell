@@ -2,6 +2,7 @@
 #define MY_CELL_H
 
 #include "my_neuralnetwork.h"
+#include "my_evo.h"
 #include "SFML/Graphics.h"
 
 typedef struct {
@@ -20,6 +21,6 @@ typedef struct {
 
 #define SIZE 512.
 
-void my_cell_create(void *cell_ptr, void *params)
+void my_cell_create(void *cell_ptr, void *params);
 
 #endif
