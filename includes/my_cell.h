@@ -33,5 +33,6 @@ void my_cell_reset(void *cell_ptr, void *pop,\
                                     uint32_t pop_size, void *params);
 uint32_t my_cell_update(void *cell_ptr, void *pop,\
                                 uint32_t pop_size, void *params);
+void my_cell_draw(sfRenderWindow * window, void *cell_ptr, void *params);
 
 #endif
