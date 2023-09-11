@@ -23,5 +23,7 @@ int main(int argc, char* argv[])
         .create_agent = my_cell_create,
         .free_agent = my_cell_free
     };
+    my_evo_create(&evo);
+    
     return 0;
 }
