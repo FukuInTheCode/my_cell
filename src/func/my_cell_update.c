@@ -20,6 +20,7 @@ uint32_t my_cell_update(void *cell_ptr, void *pop,\
     MAT_DECLA(new_atb);
     my_matrix_add(&new_atb, 2, &(cell->atb), &datb);
     my_matrix_applyfunc_2(&new_atb, control_coords);
+    my_matrix_copy(&new_atb, &(cell->atb));
     my_matrix_free(2, &datb, &new_atb);
     return pop_size;
 }
