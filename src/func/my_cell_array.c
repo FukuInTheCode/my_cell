@@ -6,3 +6,5 @@ uint32_t my_cell_get_array(void *cell_ptr, double **arr, void *params)
     my_nn_to_array(&(cell->brain), arr);
     return my_nn_get_n_params(&(cell->brain));
 }
+
+
