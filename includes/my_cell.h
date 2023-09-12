@@ -7,6 +7,7 @@
 
 typedef struct {
     uint32_t gen_i;
+    sfFont *font;
 } my_global_params_t;
 
 typedef struct {
