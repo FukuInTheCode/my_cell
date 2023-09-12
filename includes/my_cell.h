@@ -21,7 +21,7 @@ typedef struct {
 
 #define SIZE 100.
 
-void my_cell_create(void *cell_ptr, void *params);
+void my_cell_create_v1(void *cell_ptr, void *params);
 void my_cell_free(void *cell_ptr, void *params);
 double my_cell_get_reward(void *cell_ptr, void *pop,\
                             uint32_t pop_size, void *params);
