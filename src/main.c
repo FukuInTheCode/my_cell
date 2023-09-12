@@ -4,7 +4,8 @@ int main(int argc, char* argv[])
 {
     srand(time(0));
     my_global_params_t gps = {
-        .gen_i = 0
+        .gen_i = 0,
+        .font = sfFont_createFromFile("data-latin.ttf")
     };
 
     my_evo_t evo = {

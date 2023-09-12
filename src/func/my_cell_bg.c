@@ -6,7 +6,6 @@ void my_cell_draw_bg(sfRenderWindow *window, void *params)
     my_global_params_t *gps = (my_global_params_t *)params;
     char *str = init_str("gen n'", gps->gen_i);
     sfText *txt = sfText_create();
-    sfFont *font = sfFont_createFromFile(".../../includes/ARIAL.TTF");
     sfText_setFont(txt, font);
     sfText_setString(txt, str);
     sfRenderWindow_drawText(window, txt, NULL);
