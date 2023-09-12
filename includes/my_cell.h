@@ -6,6 +6,10 @@
 #include "SFML/Graphics.h"
 
 typedef struct {
+    uint32_t gen_i;
+} my_global_params_t;
+
+typedef struct {
     my_nn_t brain;
     my_matrix_t atb;
     sfColor color;
