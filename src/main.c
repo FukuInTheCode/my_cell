@@ -7,11 +7,11 @@ int main(int argc, char* argv[])
     my_evo_t evo = {
         .pop_size = 100,
         .selected_size = 50,
-        .max_tick_per_gen = SIZE,
+        .max_tick_per_gen = SIZE / 3.,
         .mutation_chance = 0.3,
         .mutation_range = 1.,
         .agent_struct_size = sizeof(my_cell_t),
-        .gen_skip = 0,
+        .gen_skip = 10,
         .params = NULL,
         .draw_agent = my_cell_draw,
         .draw_bg = my_cell_draw_bg,
