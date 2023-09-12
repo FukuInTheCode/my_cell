@@ -14,6 +14,7 @@ int main(int argc, char* argv[])
         .gen_skip = 0,
         .params = NULL,
         .draw_agent = my_cell_draw,
+        .draw_bg = my_cell_draw_bg,
         .update_agent = my_cell_update,
         .agent_is_select = my_cell_is_select,
         .get_agent_reward = my_cell_get_reward,
