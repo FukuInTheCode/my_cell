@@ -1,6 +1,6 @@
 #include "../../includes/my.h"
 
-void my_cell_create_v1(void *cell_ptr, void *params)
+void my_cell_create_v2(void *cell_ptr, void *params)
 {
     my_cell_t *cell = (my_cell_t *)cell_ptr;
     uint32_t dims[] = {2, 3, 3, 3};
