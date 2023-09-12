@@ -15,7 +15,7 @@ int main(int argc, char* argv[])
         .mutation_chance = 0.3,
         .mutation_range = 1.,
         .agent_struct_size = sizeof(my_cell_t),
-        .gen_skip = 10,
+        .gen_skip = 0,
         .params = (void *)(&gps),
         .draw_agent = my_cell_draw,
         .draw_bg = my_cell_draw_bg,
