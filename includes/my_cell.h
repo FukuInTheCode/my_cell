@@ -19,7 +19,7 @@ typedef struct {
 
 #define C_COLOR sfRed
 
-#define SIZE 512.
+#define SIZE 256.
 
 void my_cell_create(void *cell_ptr, void *params);
 void my_cell_free(void *cell_ptr, void *params);
