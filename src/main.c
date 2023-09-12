@@ -3,7 +3,10 @@
 int main(int argc, char* argv[])
 {
     srand(time(0));
-    printf("HEllo\n");
+    my_global_params_t gps = {
+        gen_i = 0
+    };
+    
     my_evo_t evo = {
         .pop_size = 100,
         .selected_size = 50,
@@ -12,7 +15,7 @@ int main(int argc, char* argv[])
         .mutation_range = 1.,
         .agent_struct_size = sizeof(my_cell_t),
         .gen_skip = 10,
-        .params = NULL,
+        .params = (void *)(&gps),
         .draw_agent = my_cell_draw,
         .draw_bg = my_cell_draw_bg,
         .update_agent = my_cell_update_v1,
