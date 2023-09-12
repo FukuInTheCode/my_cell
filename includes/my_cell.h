@@ -39,5 +39,7 @@ uint32_t my_cell_update_v1(void *cell_ptr, void *pop,\
                                 uint32_t pop_size, void *params);
 void my_cell_draw(sfRenderWindow * window, void *cell_ptr, void *params);
 void my_cell_draw_bg(sfRenderWindow *window, void *params);
+void my_cell_update_params(void *pop, uint32_t pop_size, void *params_ptr);
+
 
 #endif
