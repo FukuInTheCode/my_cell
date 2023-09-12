@@ -3,8 +3,10 @@
 
 void my_cell_draw_bg(sfRenderWindow *window, void *params)
 {
+    sfRenderWindow_clear(window, sfBlack);
     my_global_params_t *gps = (my_global_params_t *)params;
     char *str = init_str("gen n'", gps->gen_i);
+    printf("%s\n", str);
     sfText *txt = sfText_create();
     sfText_setFont(txt, gps->font);
     sfText_setString(txt, str);
@@ -13,8 +15,8 @@ void my_cell_draw_bg(sfRenderWindow *window, void *params)
     sfText_setPosition(txt, txt_pos);
     sfRenderWindow_drawText(window, txt, NULL);
     free(str);
+    sfText_destroy(txt);
 
-    sfRenderWindow_clear(window, sfBlack);
     sfVector2u window_size = sfRenderWindow_getSize(window);
     sfVector2f ratio = {
         .x = window_size.x / SIZE,
