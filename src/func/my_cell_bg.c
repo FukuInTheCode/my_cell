@@ -10,7 +10,7 @@ void my_cell_draw_bg(sfRenderWindow *window, void *params)
     };
     sfRectangleShape *rect = sfRectangleShape_create();
     sfVector2f rect_vec = {
-        .x = ratio.x * SIZE / 3.
+        .x = ratio.x * SIZE / 3.,
         .y = window_size.y
     };
     sfRectangleShape_setFillColor(rect, sfTransparent);
