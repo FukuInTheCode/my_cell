@@ -18,7 +18,7 @@ static double control_coords(double x)
 static void check_new_atb(my_matrix_t *old_atb, uint32_t pop_size,\
                                         void *pop, my_matrix_t *new_atb)
 {
-    my_matrix_applyfunc_2(&new_atb, control_coords);
+    my_matrix_applyfunc_2(new_atb, control_coords);
     for (uint32_t i = 0; i < pop_size; ++i) {
         my_cell_t *cell_ptr = (my_cell_t *)((char *)pop +\
                                         i * sizeof(my_cell_t));
