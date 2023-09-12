@@ -7,6 +7,9 @@ void my_cell_create(void *cell_ptr, void *params)
     cell->brain.name = "brain";
     cell->brain.dims = dims;
     cell->brain.size = 3;
+    cell->brain.acti_type = base_type;
+    cell->brain.funcs.af = my_nn_sin;
+    cell->brain.funcs.grad_af = my_nn_sin_grad;
     my_nn_create(&(cell->brain));
     cell->atb.m = 0;
     cell->atb.n = 0;
