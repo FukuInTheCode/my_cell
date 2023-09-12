@@ -18,8 +18,10 @@ static double control_coords(double x)
 static void check_new_atb(my_matrix_t *old_atb, uint32_t pop_size,\
                                         void *pop, my_matrix_t *new_atb)
 {
+    my_matrix_applyfunc_2(&new_atb, control_coords);
     for (uint32_t i = 0; i < pop_size; ++i) {
-        my_cell_t *cell_ptr = (my_cell_t *)((char *)pop + i * sizeof(my_cell_t));
+        my_cell_t *cell_ptr = (my_cell_t *)((char *)pop +\
+                                        i * sizeof(my_cell_t));
         if (!my_matrix_equals(&(cell_ptr->atb), new_atb))
             continue;
         new_atb->arr[1][0] = old_atb->arr[1][0];
@@ -36,7 +38,6 @@ uint32_t my_cell_update(void *cell_ptr, void *pop,\
     my_matrix_applyfunc_2(&datb, normalize);
     MAT_DECLA(new_atb);
     my_matrix_add(&new_atb, 2, &(cell->atb), &datb);
-    my_matrix_applyfunc_2(&new_atb, control_coords);
     my_matrix_copy(&new_atb, &(cell->atb));
     my_matrix_free(2, &datb, &new_atb);
     return pop_size;
