@@ -14,6 +14,7 @@ void my_cell_draw_bg(sfRenderWindow *window, void *params)
         .y = window_size.y
     };
     sfRectangleShape_setFillColor(rect, sfTransparent);
+    sfRectangleShape_setOutlineThickness(rect, 3);
     sfRectangleShape_setSize(rect, rect_vec);
     rect_vec.x += ratio.x * SIZE / 3.;
     rect_vec.y = 0;
