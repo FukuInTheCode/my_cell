@@ -26,7 +26,6 @@ static void check_new_atb(my_matrix_t *old_atb, uint32_t pop_size,\
             new_atb->arr[0][0] = old_atb->arr[0][0];
         if (cell_ptr->atb.arr[1][0] == new_atb->arr[1][0])
             new_atb->arr[1][0] = old_atb->arr[1][0];
-
     }
 }
 
