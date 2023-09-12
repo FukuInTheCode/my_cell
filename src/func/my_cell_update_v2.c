@@ -29,7 +29,7 @@ static void check_new_atb(my_matrix_t *old_atb, uint32_t pop_size,\
     }
 }
 
-uint32_t my_cell_update_v1(void *cell_ptr, void *pop,\
+uint32_t my_cell_update_v2(void *cell_ptr, void *pop,\
                                 uint32_t pop_size, void *params)
 {
     my_cell_t *cell = (my_cell_t *)cell_ptr;
