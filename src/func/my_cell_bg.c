@@ -8,6 +8,7 @@ void my_cell_draw_bg(sfRenderWindow *window, void *params)
     sfText *txt = sfText_create();
     sfFont *font = sfFont_createFromFile("C:\\Windows\\Fonts\\Arial\\arial.ttf");
     sfText_setFont(txt, font);
+    sfText_setString(txt, str);
     sfRenderWindow_drawText(window, txt, NULL);
     free(str);
 
