@@ -43,7 +43,6 @@ uint32_t my_cell_update_v1(void *cell_ptr, void *pop,\
         my_matrix_set(&datb, 0, 0, 0);
         my_matrix_set(&datb, 1, 0, 0);
     }
-
     my_matrix_applyfunc_2(&datb, normalize);
     MAT_DECLA(new_atb);
     my_matrix_add(&new_atb, 2, &(cell->atb), &datb);
