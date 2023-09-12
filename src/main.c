@@ -24,6 +24,9 @@ int main(int argc, char* argv[])
         .free_agent = my_cell_free
     };
     my_evo_create(&evo);
+    sfVideoMode mode = {1500, 1500, 32};
+    my_evo_viz(&evo, mode);
+    my_evo_free(&evo);
 
     return 0;
 }
