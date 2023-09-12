@@ -15,4 +15,5 @@ void my_cell_create(void *cell_ptr, void *params)
     cell->atb.n = 0;
     my_matrix_create(2, 1, 1, &(cell->atb));
     my_matrix_randint(0, SIZE, 1, &(cell->atb));
+    cell->color = sfRed;
 }
