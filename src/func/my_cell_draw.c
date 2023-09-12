@@ -5,8 +5,8 @@ void my_cell_draw(sfRenderWindow * window, void *cell_ptr, void *params)
     my_cell_t *cell = (my_cell_t *)cell_ptr;
     sfVector2u window_size = sfRenderWindow_getSize(window);
     sfVector2f ratio = {
-        .x = (window_size.x - RADIUS)/ SIZE,
-        .y = (window_size.y - RADIUS) / SIZE
+        .x = (window_size.x) / RADIUS / 2,
+        .y = (window_size.y) / RADIUS / 2
     };
     sfCircleShape *pt = sfCircleShape_create();
     sfCircleShape_setFillColor(pt, cell->color);
