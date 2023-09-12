@@ -10,7 +10,7 @@ void my_cell_draw_bg(sfRenderWindow *window, void *params)
     sfText_setString(txt, str);
     sfText_setFillColor(txt, sfWhite);
     sfVector2f txt_pos = {0, 0};
-    sfText_setPosition(txt, {0, 0});
+    sfText_setPosition(txt, txt_pos);
     sfRenderWindow_drawText(window, txt, NULL);
     free(str);
 
