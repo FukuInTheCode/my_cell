@@ -6,7 +6,7 @@ int main(int argc, char* argv[])
     my_global_params_t gps = {
         .gen_i = 0
     };
-    
+
     my_evo_t evo = {
         .pop_size = 100,
         .selected_size = 50,
