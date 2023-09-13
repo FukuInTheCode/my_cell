@@ -5,7 +5,7 @@ bool my_cell_is_select(void *cell_ptr, void *reward,\
 {
     my_cell_t *cell = (my_cell_t *)cell_ptr;
     double x = cell->atb.arr[0][0];
-    if (x < SIZE / 3. * 2)
+    if (x < SIZE / 5. * 4.)
         return false;
     return true;
 }
