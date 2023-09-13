@@ -1,7 +1,7 @@
 #define UPDATE_CELL_NATB_FUNC
 #include "../../includes/my.h"
 
-static get_infos(my_matrix_t *infos, my_matrix_t *atb,\
+static void get_infos(my_matrix_t *infos, my_matrix_t *atb,\
                                 void *pop, uint32_t pop_size)
 {
     if (atb->arr[0][0] < 0)
