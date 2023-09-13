@@ -29,7 +29,7 @@ uint32_t my_cell_update_v3(void *cell_ptr, void *pop,\
     my_matrix_create(2, 1, 1, &datb);
     my_matrix_set(&datb, 0, 0, pred.arr[0][0]);
     my_matrix_set(&datb, 1, 0, pred.arr[1][0]);
-    if (pred.arr[2][0] <= 0) {
+    if (pred.arr[2][0] > 0) {
         my_matrix_set(&datb, 0, 0, 0);
         my_matrix_set(&datb, 1, 0, 0);
     }
