@@ -54,6 +54,10 @@ static double normalize(double x)
 {
     return (x > 0.5) - (x < 0.5);
 }
+static double normalize2(double x)
+{
+    return (x > 0) - (x < 0);
+}
 
 static double control_coords(double x)
 {
