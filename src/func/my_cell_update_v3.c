@@ -23,7 +23,6 @@ uint32_t my_cell_update_v3(void *cell_ptr, void *pop,\
     get_infos(&infos, &(cell->atb), pop, pop_size);
     MAT_DECLA(xs);
     my_matrix_concatrow(&xs, &(cell->atb), &infos);
-    MAT_PRINT(xs);
     MAT_DECLA(pred);
     my_nn_predict(&(cell->brain), &xs, &pred);
     MAT_DECLA(datb);
