@@ -45,6 +45,8 @@ void my_cell_create_v2(void *cell_ptr, void *params);
 uint32_t my_cell_update_v2(void *cell_ptr, void *pop,\
                                 uint32_t pop_size, void *params);
 void my_cell_create_v3(void *cell_ptr, void *params);
+uint32_t my_cell_update_v3(void *cell_ptr, void *pop,\
+                                uint32_t pop_size, void *params);
 
 #ifdef UPDATE_CELL_NATB_FUNC
 
