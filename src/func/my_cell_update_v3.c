@@ -1,3 +1,4 @@
+#define UPDATE_CELL_NATB_FUNC
 #include "../../includes/my.h"
 
 uint32_t my_cell_update_v3(void *cell_ptr, void *pop,\
