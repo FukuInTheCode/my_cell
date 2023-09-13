@@ -8,8 +8,8 @@ void my_cell_create_v3(void *cell_ptr, void *params)
     cell->brain.dims = dims;
     cell->brain.size = 5;
     cell->brain.acti_type = base_type;
-    cell->brain.funcs.af = my_nn_sin;
-    cell->brain.funcs.grad_af = my_nn_sin_grad;
+    cell->brain.funcs.af = my_nn_tanh;
+    cell->brain.funcs.grad_af = my_nn_tanh_grad;
     my_nn_create(&(cell->brain));
     cell->atb.m = 0;
     cell->atb.n = 0;
