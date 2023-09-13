@@ -1,12 +1,21 @@
 #define UPDATE_CELL_NATB_FUNC
 #include "../../includes/my.h"
 
+static get_infos(my_matrix_t *infos, my_matrix_t *atb,\
+                                void *pop, uint32_t pop_size)
+{
+
+}
+
 uint32_t my_cell_update_v3(void *cell_ptr, void *pop,\
                                 uint32_t pop_size, void *params)
 {
     my_cell_t *cell = (my_cell_t *)cell_ptr;
+    MAT_DECLA(infos);
+    my_matrix_create(4, 1, 1, &infos);
+    get_infos(&infos, &(cell->atb), pop, pop_size);
     MAT_DECLA(xs);
-    my_matrix_copy(&(cell->atb), &xs);
+    my_matrix_concatrow(&xs, &(cell->atb), &infos);
     MAT_DECLA(pred);
     my_nn_predict(&(cell->brain), &xs, &pred);
     MAT_DECLA(datb);
@@ -22,6 +31,6 @@ uint32_t my_cell_update_v3(void *cell_ptr, void *pop,\
     my_matrix_add(&new_atb, 2, &(cell->atb), &datb);
     check_new_atb(&(cell->atb), pop_size, pop, &new_atb);
     my_matrix_copy(&new_atb, &(cell->atb));
-    my_matrix_free(2, &datb, &new_atb);
+    my_matrix_free(4, &datb, &new_atb, &xs, &infos);
     return pop_size;
 }
