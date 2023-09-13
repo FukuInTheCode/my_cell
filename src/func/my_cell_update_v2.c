@@ -1,3 +1,4 @@
+#define UPDATE_CELL_NATB_FUNC
 #include "../../includes/my.h"
 
 static double normalize(double x)
