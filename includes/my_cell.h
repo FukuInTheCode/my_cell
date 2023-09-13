@@ -52,7 +52,7 @@ uint32_t my_cell_update_v3(void *cell_ptr, void *pop,\
 
 static double normalize(double x)
 {
-    return (x > 0) - (x < 0);
+    return (x > 0.5) - (x < 0.5);
 }
 
 static double control_coords(double x)
