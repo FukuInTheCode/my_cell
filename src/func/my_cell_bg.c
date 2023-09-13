@@ -23,13 +23,13 @@ void my_cell_draw_bg(sfRenderWindow *window, void *params)
     };
     sfRectangleShape *rect = sfRectangleShape_create();
     sfVector2f rect_vec = {
-        .x = ratio.x * SIZE / 3.,
+        .x = ratio.x * SIZE / 5.,
         .y = window_size.y
     };
     sfRectangleShape_setFillColor(rect, sfTransparent);
     sfRectangleShape_setOutlineThickness(rect, 3);
     sfRectangleShape_setSize(rect, rect_vec);
-    rect_vec.x += ratio.x * SIZE / 3.;
+    rect_vec.x = ratio.x * SIZE / 5. * 4;
     rect_vec.y = 0;
     sfRectangleShape_setPosition(rect, rect_vec);
     sfRenderWindow_drawRectangleShape(window, rect, NULL);
