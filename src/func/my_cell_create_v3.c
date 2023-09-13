@@ -3,7 +3,7 @@
 void my_cell_create_v3(void *cell_ptr, void *params)
 {
     my_cell_t *cell = (my_cell_t *)cell_ptr;
-    uint32_t dims[] = {6, 8, 8, 5, 3};
+    uint32_t dims[] = {6, 8, 8, 4, 3};
     cell->brain.name = "brain";
     cell->brain.dims = dims;
     cell->brain.size = 5;
