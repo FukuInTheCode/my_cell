@@ -33,6 +33,8 @@ uint32_t my_cell_update_v3(void *cell_ptr, void *pop,\
                                 uint32_t pop_size, void *params)
 {
     my_cell_t *cell = (my_cell_t *)cell_ptr;
+    MAT_DECLA(xs);
+    my_matrix_copy(&(cell->atb), &xs);
     MAT_DECLA(pred);
     my_nn_predict(&(cell->brain), &(cell->atb), &pred);
     MAT_DECLA(datb);
